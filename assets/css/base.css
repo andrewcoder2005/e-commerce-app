@@ -19,7 +19,9 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box ;
 }
+/* Responsive */
 .grid{
+
     width: 1250px;
     max-width: 100%;
     margin: 0 auto;
@@ -28,8 +30,22 @@ html {
     width: 100%;
 }
 .grid__row{
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    margin-left:-12px ;
+    margin-right:-12px ;
+}
+/* Test out */
+.grid__column-2{
+    padding-left:12px ;
+    padding-right:12px ;
+    width: 16.6667%;
+}
+.grid__column-10{
+    padding-left:12px ;
+    padding-right:12px ;
+    width: 83.3334%;
 }
 /* Animation */
 @keyframes fadeIn{
@@ -85,6 +101,10 @@ html {
     border-radius: 2px;
     cursor: pointer;
     background-color: transparent;
+    padding: 0 12px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
 }
 .btn:hover{
     background-color: rgba(0,0,0,0.05)
@@ -93,4 +113,60 @@ html {
 .btn.btn--primary{
     color: var(--white-colour);
     background-color:var(--primary-colour)
+}
+
+/* Selection */
+.select-input{
+position: relative;
+min-width: 200px;
+height: 34px;
+padding: 0 12px;
+border-radius: 2px;
+background-color: var(--white-colour);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__label{
+    font-size: 1.4rem;
+}
+.select-input__icon{
+    font-size: 1.4rem;
+    color: rgba(131,131,131);
+    margin: 0 16px 0 8px;
+    position: relative;
+    top: 1px;
+}
+.select-input__list{
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24.8px;
+    background-color: var(--white-colour);
+    border-radius: 2px;
+    display: none;
+    padding: 8px 16px;
+}
+.select-input__item{
+list-style: none;
+height: 34px;
+align-items: center;
+}
+.select-input__item-link{
+position: relative;
+text-decoration: none;
+font-size: 1.4rem;
+color: var(--text-colour);
+transition: right linear 0.1s;
+right: 0;
+display: block;
+padding: 4px 0;
+}
+.select-input__item-link:hover{
+    color: var(--primary-colour);
+    right: -4px;
 }
