@@ -191,7 +191,7 @@ height: 13px;
     transition: transform 0.2s ease-in, opacity 0.25s ease-in;
     will-change: opacity, transform;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
 .header__notify::before{
     position: absolute;
@@ -844,4 +844,167 @@ margin-right: 16px;
 .home-filter__page-icon{
     font-size: 1.4rem;
     margin: auto;
+}
+
+/* Product item */
+.home-product .grid__row{
+    padding-top: 0;
+}
+.home-product-item {
+    position: relative;
+    margin-top: 10px ;
+    background-color: var(--white-colour);
+    padding: 0;
+    display: block;
+    transition: top linear 0.1s;
+}
+.home-product-item:hover {
+    top: -4px;
+}
+.home-product-item__img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 2px;
+    border-bottom: 1px solid rgba(0,0,0,0.05)
+}
+.home-product-item__name{
+    line-height: 1.8rem;
+    margin: 10px 10px 6px ;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-colour);
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.home-product-item__price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    align-items: baseline;
+    flex-wrap:wrap;
+    margin-right: 10px;
+}
+.home-product-item__price-original{
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #666;
+
+}
+.home-product-item__price-current{
+    margin-left: 10px;
+    color: var(--primary-colour);
+    font-weight: 400;
+}
+.home-product-item__action{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 10px 0;
+}
+.home-product-item__like{
+    color: #F63D30;
+}
+.home-product-item__like--liked .home-product-item__like--liked{
+    display: inline-block;
+}
+.home-product-item__like--liked .home-product-item__like--active{
+    display: none; 
+}
+.home-product-item__like--default{
+
+}
+.home-product-item__rating{
+    font-size: 0.7rem;
+    margin-left: auto;
+    margin-top: -1px 0 0 auto;
+}
+.home-product-item__rating--rated{
+    color:#FFCE3E ;
+}
+.home-product-item__rating--not-rated{
+    color: grey;
+}
+.home-product-item__sold{
+    font-size: 1rem;
+    color: var(--text-colour);
+    margin-left: 4px;
+}
+.home-product-item__origin{
+    display: flex;
+    justify-content: space-between;
+    color: #cbc6cd;
+    margin: 3px 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.home-product-item__brand{
+}
+.home-product-item__country{
+
+}
+.home-product-item__favourite{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    padding-right: 4px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    font-weight: 400;
+    color: var(--primary-colour);
+    background-color: currentColor;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.home-product-item__favourite::after{
+    position: absolute;
+    left: 0;
+    content: "";
+    border-top: 3px solid currentColor;
+    border-left: 4px solid transparent;
+    bottom: -3px;
+    filter: brightness(60%);
+}
+.home-product-item__favourite span{
+    color: var(--white-colour);
+}
+.home-product-item__favourite i{
+    color: var(--white-colour);
+    font-size: 0.9rem;
+    margin: 0 1px 0 5px;
+}
+.home-product-item__discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    background-color: rgb(253, 216, 72, .94);
+    text-align: center;
+}
+.home-product-item__discount-percent{
+    color: #EE4D2D;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    position: relative;
+    top: 1px;
+}
+.home-product-item__discount-label{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: var(--white-colour);
+    font-weight: 600;
+    position: relative;
+    top: -1px;
+}
+.home-product-item__discount{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
 }
