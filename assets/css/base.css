@@ -8,6 +8,7 @@
     --header-height: 120px;
     --navbar-height: 47px;
     --header__search-height: calc(var(--header-height) - var(--navbar-height));
+    --header__sort-bar-heigth: 46px
 }
 *{
     box-sizing: inherit;
@@ -20,15 +21,6 @@ html {
     box-sizing: border-box ;
 }
 /* Responsive */
-.grid{
-
-    width: 1250px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
 .grid__row{
     padding-top: 30px;  
     display: flex;
@@ -272,7 +264,7 @@ box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 margin-right: .75rem;
 padding: .25rem;
 }
-.footer__list-item-app-list:{
+.footer__list-item-app-list{
 display: flex;
 flex-direction: column;
 height: 80px;
