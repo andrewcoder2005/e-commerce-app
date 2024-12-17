@@ -15,7 +15,6 @@
     margin-left: -4px;
     margin-right: -4px;
 }
-
 .row.no-gutters {
     margin-left: 0;
     margin-right: 0;
@@ -300,7 +299,6 @@
     .l-0 {
         display: none;
     }
-
     .l-1,
     .l-2,
     .l-2-4,
@@ -326,12 +324,10 @@
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
-
     .l-2-4 {
         flex: 0 0 20%;
         max-width: 20%;
     }
-
     .l-3 {
         flex: 0 0 25%;
         max-width: 25%;
