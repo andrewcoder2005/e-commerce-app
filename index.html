@@ -18,7 +18,7 @@
     <div class="app">
         <div class="header">
             <div class="grid wide">   
-                <!-- Header navbar --> 
+                <!-- PC Header navbar --> 
                 <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--display-qr header__navbar-item--or">Log on our app <span class="franchies-name">EasyGet</span>
@@ -120,10 +120,49 @@
                         </li>
                     </ul>
                 </nav>
-               <!-- Header search -->
+
+                    <!-- Mobile navbar -->
+                <nav class="navbar__mobile">
+                    <label for="nav-mobile-input" class="navbar__mobile-bar-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+                    <label for="nav-mobile-input" class="navbar__mobile-overlay"></label>
+                    <div class="navbar__mobile-header">
+                        <div class="header__navbar-user">
+                            <img src="./assets/img/profile_img.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Andrew Pham</span>
+                        </div>
+                        <label for="nav-mobile-input" class="navbar__mobile-close-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>                        <ul class="navbar__mobile-list">
+                            <li>
+                                <a href="#" class="navbar__mobile-link">Best sellers </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__mobile-link">Dive watches </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__mobile-link">Luxury watches </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__mobile-link">Digital watches </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__mobile-link">Smart watches </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                        <!-- Header search -->
                 <div class="header__search">
+                    <!-- Mobile search -->
+                    <label for="search-mobile-input" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <input hidden type="checkbox" name="" class="search__input" id="search-mobile-input">
                     <!-- Logo Section -->
-                    <a href="./index.html" class="header__logo hide-on-tablet">
+                    <a href= ./index.html" class="header__logo hide-on-tablet">
                         <div class="header__logo-icon">
                             <i class="fa-solid fa-bag-shopping" aria-label="Shopping bag"></i>
                         </div>
@@ -235,17 +274,18 @@
                     <a href="" class="header__sort-link">Price</a>
                 </li>
             </ul>
+
         </div>
         <div class="app__container">
             <div class="grid wide">
                 <div class="grid__row">
                     <div class="grid__column-2">
-                        <nav class="app__container-category">
+                        <nav class="app__container-category hide-on-mobile">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fa-solid fa-list"></i>
                                 Category
                             </h3>
-                            <ul class="category-list">
+                            <ul class="category-list ">
                                 <li class="category-item category-item--active">
                                     <a href="#" class="category-item__link">Best sellers</a>
                                 </li>

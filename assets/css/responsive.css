@@ -3,6 +3,7 @@
     :root{
         --header-height: 68px;
         --navbar-height: 0px;
+        --search-height: 46px;
     }
     .hide-on-mobile-tablet{
         display: none;
@@ -49,5 +50,90 @@
 @media  (max-width: 739px) {
     .hide-on-mobile{
         display: none;
+    }
+    .header__cart{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .header__logo-icon{
+        font-size: 35px;
+        padding-top: 8px;
+    }
+    .header__logo-text{
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }
+    .navbar__mobile-bar-btn{
+        display: block;
+    }
+    .header__search{
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .header__tool-btn{
+        margin: 5px 0;
+        height: 36px;
+    }
+    .header__history-search{
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: calc(var(--header-height) + var(--header__sort-bar-heigth));
+    }
+    .header__tool{
+        height: 46px;
+        left: 0;
+        right: 0;
+        position: fixed;
+        top: var(--header-height);
+        display: none;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05) ;
+        animation: mobileSearchSlide linear 0.3s;
+    }
+    .
+    @keyframes mobileSearchSlide {
+        from{
+            opacity: 0;
+            top:calc(var(--header-height) / 2)
+        }
+        to{
+            opacity: 1;
+            top: var(--header-height);
+        }
+    }
+    .header__tool-btn
+    .navbar__mobile-bar-btn{
+        display: block;
+
+    }
+    .navbar__mobile{
+        display: block;
+    }
+    .navbar__mobile-overlay{
+    }
+    .header__navbar-user{
+        align-items: center;
+        justify-content:flex-start;
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+    .header__navbar-user-img{
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--border-color);
+        }
+    .header__navbar-user-name{
+        font-weight: 400;
+        color: #333;
+    }
+    .header__navbar-user-name:after{
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: -10px;
+        right: 0;
+        height: 2px;
+        background-color: rgba(0,0,0,0.4)
     }
 }
