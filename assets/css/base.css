@@ -219,13 +219,19 @@ padding: 0;
     list-style: none;
     padding-bottom: 12px;
 }
-.footer__list-item-link{
+.footer__list-link{
     text-decoration: none;
     color: #737373;
     font-size: 1.2rem;
     font-weight: 400;
+    display: flex;
+
 }
-.footer__list-item-link:hover{
+.footer__list-link i{
+    margin-right: 5px;
+    padding-top: 7px;
+}
+.footer__list-link:hover{
     color: var(--primary-colour);
     }
 .footer__list-item-payment{
@@ -265,11 +271,11 @@ margin-right: .75rem;
 padding: .25rem;
 }
 .footer__list-item-app-list{
-display: flex;
-flex-direction: column;
-height: 80px;
-justify-content: space-evenly;
-border: 1px solid var(--border-colour);
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-evenly;
+    border: 1px solid var(--border-colour);
 }
 .footer__list-item-app-list img{
 display: flex;
